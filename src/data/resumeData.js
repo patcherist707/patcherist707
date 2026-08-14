@@ -50,7 +50,33 @@ export const resumeData = {
       description: "Designed and built a line-following robot utilizing BC 108 NPN Transistors, N4148 Diodes, and Resistors integrated into a custom single PCB design.",
       tech: ["Hardware Assembly", "PCB Design", "Transistors & Diodes", "Robotics"]
     }
-  ]
+  ],
+  projects: [
+  {
+    id: 1,
+    title: "IoT Environmental Monitoring System",
+    type: "Co-Authored Thesis",
+    description: "Implemented an ESP32-based monitoring system using MQTT and sensors (RFID, DHT22). Integrated Firebase for automated database and real-time monitoring, and developed an interactive web dashboard.",
+    link: "https://github.com/FALabyow/admin-dashboard", // Your project or GitHub link here
+    tech: ["ESP32", "MQTT", "RFID", "DHT22", "Firebase", "Front-End Dashboard"]
+  },
+  {
+    id: 2,
+    title: "Accounting Receivable System",
+    type: "Academic Plate",
+    description: "Developed a desktop-based financial system that records customer information and implements Add, Products, Update, Search, and Display features.",
+    link: "https://github.com/patcherist707/Accounting-Receivable-System",
+    tech: ["Java", "SQL Server"]
+  },
+  {
+    id: 3,
+    title: "Line-Following Robot",
+    type: "Collaborated Project",
+    description: "Designed and built a line-following robot utilizing BC 108 NPN Transistors, N4148 Diodes, and Resistors integrated into a custom single PCB design.",
+    link: "https://drive.google.com/drive/folders/1OfaAPh9JlU8u7j_kH8VQD6DkbCkJL_--?usp=sharing",
+    tech: ["Hardware Assembly", "PCB Design", "Transistors & Diodes", "Robotics"]
+  }
+]
 };
 
 export const fadeInUp = {

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Layers } from 'lucide-react';
+import { Layers, ExternalLink } from 'lucide-react';
 import { resumeData, fadeInUp } from '../data/resumeData';
 
 export default function Projects() {
@@ -40,9 +40,22 @@ export default function Projects() {
                 </div>
 
                 <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">{project.title}</h3>
-                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
                   {project.description}
                 </p>
+
+                {/* Project Link */}
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-600 dark:text-cyan-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors mb-6 group"
+                  >
+                    <span>View Project</span>
+                    <ExternalLink size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </a>
+                )}
               </div>
 
               <div>
