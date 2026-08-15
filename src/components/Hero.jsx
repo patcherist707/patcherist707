@@ -77,7 +77,7 @@ export default function Hero() {
                 Contact Me <ChevronRight size={18} />
               </a>
               <a
-                href={`${import.meta.env.BASE_URL}resume.pdf`}
+                href="https://maipdf.com/file/a774f7e016062a@pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 font-semibold transition-all"
