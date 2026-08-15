@@ -4,8 +4,11 @@ import { resumeData, fadeInUp, staggerContainer } from '../data/resumeData';
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative z-10 py-16 md:py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section 
+      id="skills" 
+      className="relative z-10 min-h-screen flex items-center justify-center py-16 md:py-20"
+    >
+      <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial="hidden"
           whileInView="visible"
@@ -13,9 +16,9 @@ export default function Skills() {
           variants={fadeInUp}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <h2 className="text-3xl font-bold text-slate-900 dark:text-slate-100">Technical Skills</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100">Technical Skills</h2>
           <p className="mt-2 text-slate-500 dark:text-slate-400">Core technologies and tools acquired during computer engineering studies</p>
-          <div className="mt-2 w-16 h-1 bg-cyan-500 mx-auto rounded-full"></div>
+          <div className="mt-3 w-16 h-1 bg-cyan-500 mx-auto rounded-full"></div>
         </motion.div>
 
         <motion.div 

@@ -6,8 +6,11 @@ import { resumeData, fadeInUp } from '../data/resumeData';
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative z-10 py-16 md:py-24 bg-slate-100/50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section 
+      id="projects" 
+      className="relative z-10 min-h-screen flex items-center justify-center py-16 md:py-20 bg-slate-100/50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800"
+    >
+      <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial="hidden"
           whileInView="visible"
@@ -15,9 +18,9 @@ export default function Projects() {
           variants={fadeInUp}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <h2 className="text-3xl font-bold text-slate-900 dark:text-slate-100">Academic Projects</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100">Academic Projects</h2>
           <p className="mt-2 text-slate-500 dark:text-slate-400">Featured systems built during computer engineering coursework & thesis</p>
-          <div className="mt-2 w-16 h-1 bg-cyan-500 mx-auto rounded-full"></div>
+          <div className="mt-3 w-16 h-1 bg-cyan-500 mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -44,13 +47,12 @@ export default function Projects() {
                   {project.description}
                 </p>
 
-                {/* Project Link */}
                 {project.link && (
                   <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-600 dark:text-cyan-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors mb-6 group"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-600 dark:text-cyan-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors mb-4 group"
                   >
                     <span>View Project</span>
                     <ExternalLink size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

@@ -5,8 +5,11 @@ import { resumeData, fadeInUp } from '../data/resumeData';
 
 export default function About() {
   return (
-    <section id="about" className="relative z-10 py-16 bg-slate-100/50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section 
+      id="about" 
+      className="relative z-10 min-h-screen flex items-center justify-center py-16 md:py-20 bg-slate-100/50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800"
+    >
+      <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial="hidden"
           whileInView="visible"
@@ -14,8 +17,8 @@ export default function About() {
           variants={fadeInUp}
           className="text-center max-w-3xl mx-auto mb-12"
         >
-          <h2 className="text-3xl font-bold text-slate-900 dark:text-slate-100">About & Education</h2>
-          <div className="mt-2 w-16 h-1 bg-cyan-500 mx-auto rounded-full"></div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100">About & Education</h2>
+          <div className="mt-3 w-16 h-1 bg-cyan-500 mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
