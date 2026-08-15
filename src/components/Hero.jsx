@@ -77,7 +77,7 @@ export default function Hero() {
                 Contact Me <ChevronRight size={18} />
               </a>
               <a
-                href="https://maipdf.com/file/a774f7e016062a@pdf"
+                href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:ef9c5d01-d2b7-56a7-ac29-cb69c9748430"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 font-semibold transition-all"
