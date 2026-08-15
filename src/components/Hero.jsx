@@ -1,14 +1,50 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Mail, Phone, ChevronRight } from 'lucide-react';
 import { resumeData, fadeInUp, staggerContainer } from '../data/resumeData';
 
+const synonyms = ["enthusiasm", "passion", "dedication", "drive", "curiosity", "eagerness"];
+
 export default function Hero() {
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [currentText, setCurrentText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  // Typewriter effect loop
+  useEffect(() => {
+    const currentWord = synonyms[currentWordIndex];
+    const typingSpeed = isDeleting ? 60 : 120;
+
+    const timer = setTimeout(() => {
+      if (!isDeleting) {
+        // Typing characters
+        setCurrentText(currentWord.substring(0, currentText.length + 1));
+
+        if (currentText === currentWord) {
+          // Pause when word is fully typed
+          setTimeout(() => setIsDeleting(true), 1500);
+        }
+      } else {
+        // Erasing characters
+        setCurrentText(currentWord.substring(0, currentText.length - 1));
+
+        if (currentText === "") {
+          // Move to next word
+          setIsDeleting(false);
+          setCurrentWordIndex((prev) => (prev + 1) % synonyms.length);
+        }
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(timer);
+  }, [currentText, isDeleting, currentWordIndex]);
+
   return (
     <section id="home" className="relative z-10 pt-20 pb-16 md:pt-32 md:pb-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           
+          {/* Left Column: Introductions */}
           <motion.div 
             initial="hidden"
             animate="visible"
@@ -21,8 +57,8 @@ export default function Hero() {
             </motion.div>
 
             <motion.h1 variants={fadeInUp} className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
-            Welcome, <br />
-            I'm <span className="bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent">{resumeData.personal.name}</span>
+              Welcome, <br />
+              I'm <span className="bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent">{resumeData.personal.name}</span>
             </motion.h1>
 
             <motion.p variants={fadeInUp} className="mt-4 text-xl font-medium text-slate-600 dark:text-slate-300">
@@ -41,7 +77,7 @@ export default function Hero() {
                 Contact Me <ChevronRight size={18} />
               </a>
               <a
-                href="https://maipdf.com/file/a774f7e016062a@pdf"
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 font-semibold transition-all"
@@ -57,6 +93,7 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
+          {/* Right Column: Animated JSON Card */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -75,15 +112,31 @@ export default function Hero() {
               
               <div className="space-y-4 font-mono text-xs sm:text-sm">
                 <div className="text-cyan-500">{"{"}</div>
-                <div className="pl-4"><span className="text-indigo-400">"status"</span>: <span className="text-green-400">"Ready for Internship"</span>,</div>
-                <div className="pl-4"><span className="text-indigo-400">"major"</span>: <span className="text-amber-400">"Computer Engineering"</span>,</div>
-                <div className="pl-4"><span className="text-indigo-400">"university"</span>: <span className="text-amber-400">"University of Mindanao"</span>,</div>
+                <div className="pl-4">
+                  <span className="text-indigo-400">"status"</span>: <span className="text-green-400">"Ready for Internship"</span>,
+                </div>
+                <div className="pl-4">
+                  <span className="text-indigo-400">"major"</span>: <span className="text-amber-400">"Computer Engineering"</span>,
+                </div>
+                <div className="pl-4">
+                  <span className="text-indigo-400">"university"</span>: <span className="text-amber-400">"University of Mindanao"</span>,
+                </div>
                 <div className="pl-4">
                   <span className="text-indigo-400">"coreSkills"</span>: [
-                    <div className="pl-4 text-slate-400">"ReactJS", "C++", "Python",<br />"ESP32 IoT", "Firebase", "SQL"</div>
+                    <div className="pl-4 text-slate-400">
+                      "ReactJS", "C++", "Python",<br />
+                      "ESP32 IoT", "Firebase", "SQL"
+                    </div>
                   ],
                 </div>
-                <div className="pl-4"><span className="text-indigo-400">"enthusiasm"</span>: <span className="text-cyan-400">100%</span></div>
+                
+                {/* Typewriter Synonyms Line */}
+                <div className="pl-4">
+                  <span className="text-indigo-400">"{currentText}</span>
+                  <span className="text-cyan-400 font-bold animate-pulse">|</span>
+                  <span className="text-indigo-400">"</span>: <span className="text-cyan-400">100%</span>
+                </div>
+
                 <div className="text-cyan-500">{"}"}</div>
               </div>
             </div>
