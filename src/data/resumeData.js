@@ -5,7 +5,7 @@ export const resumeData = {
     name: "Patricia Madeth Buna",
     title: "Computer Engineering Student & Front-End Developer",
     location: "Butuan City, Philippines, 8601",
-    email: "p.buna.485504@gmail.com",
+    email: "p.buna.485504@umindanao.com",
     phone: "(+63) 906 462 3305",
     about: "As a Computer Engineering student, I am eager to build my skills through real work experience. I am willing to learn, adapt to new challenges, and contribute to the company. I hope to join an internship that will help me grow both personally and professionally."
   },
