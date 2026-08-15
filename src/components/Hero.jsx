@@ -40,7 +40,7 @@ export default function Hero() {
   }, [currentText, isDeleting, currentWordIndex]);
 
   return (
-    <section id="home" className="relative z-10 pt-20 pb-16 md:pt-32 md:pb-28">
+    <section id="home" className="relative z-10 min-h-[calc(100vh-4rem)] flex items-center justify-center py-12 md:py-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           
