@@ -1,16 +1,39 @@
-# React + Vite
+# Hi there, I'm Patricia 👋
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:p.buna.485504@umindanao.edu.ph)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 🚀 About Me
+- 🎓 **Computer Engineering Student** actively seeking **Internship / Co-op opportunities**.
+- 💻 Passionate about **frontend development**, **UI animations**, and building performant web experiences.
+- 🐧 Enthusiast in **Linux environments**, self-hosting, and systems tinkering.
+- 🌱 Currently exploring advanced React patterns, Tailwind CSS v4 animations, and full-stack integration.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛠️ Tech Stack & Tools
 
-## Expanding the Oxlint configuration
+**Languages & Frameworks:**
+- **Languages:** JavaScript (ES6+), TypeScript, C++, Python, HTML5, CSS3
+- **Frontend:** React, Next.js, Tailwind CSS
+- **Backend & DB:** Node.js, Express, PostgreSQL / MySQL
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+**Tools & Systems:**
+- Git & GitHub, Linux (Debian/Ubuntu), Bash / SSH, Vite, Docker
+
+---
+
+### 📂 Featured Projects
+
+| Project | Description | Tech Stack |
+| :--- | :--- | :--- |
+| **[Portfolio Website](#)** | Interactive personal portfolio featuring custom CSS keyframe animations and dynamic backgrounds. | React, Tailwind CSS, Vite |
+| **[Project Name 2](#)** | Short, one-line summary of what this project accomplishes. | React, Node.js, Express |
+| **[Project Name 3](#)** | Short, one-line summary of what this project accomplishes. | C++, Linux, Shell |
+
+---
+
+### 📬 Connect With Me
+- **Portfolio:** [yourportfolio.dev](https://patcherist707.github.io/patcherist707/)
+- **Email:** `p.buna.485504@umindanao.edu.ph`
