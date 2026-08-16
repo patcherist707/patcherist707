@@ -1,8 +1,6 @@
-# Hi there, I'm [Your Name] 👋
+# Hi there, I'm Patricia 👋
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/your-username)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:your-email@example.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:p.buna.485504@umindanao.edu.ph)
 
 ---
 
@@ -37,6 +35,5 @@
 ---
 
 ### 📬 Connect With Me
-- **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
-- **Portfolio:** [yourportfolio.dev](https://yourportfolio.dev)
-- **Email:** `your-email@example.com`
+- **Portfolio:** [yourportfolio.dev](https://patcherist707.github.io/patcherist707/)
+- **Email:** `p.buna.485504@umindanao.edu.ph`
