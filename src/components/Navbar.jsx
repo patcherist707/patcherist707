@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon, Menu, X, Sparkles } from 'lucide-react';
+import ratLogo from '/Ratv2.png';
 
 export default function Navbar({ darkMode, setDarkMode }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
           animate={{ opacity: 1, x: 0 }}
           className="text-xl font-bold bg-gradient-to-r from-cyan-500 to-indigo-600 bg-clip-text text-transparent flex items-center gap-2"
         >
-          <Sparkles className="w-5 h-5 text-cyan-500" />
+          <img src={ratLogo} alt="Logo" className='h-8 w-auto object-contain select-none' />
           <span></span>
         </motion.a>
 
