@@ -51,14 +51,9 @@ export default function Hero() {
             variants={staggerContainer}
             className="flex-1 text-center md:text-left"
           >
-            <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/20 mb-6">
-              <span className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse"></span>
-              Seeking Computer Engineering Internship
-            </motion.div>
-
             <motion.h1 variants={fadeInUp} className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
-              Welcome, <br />
-              I'm <span className="bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent">{resumeData.personal.name}</span>
+              Welcome, I'm<br />
+              <span className="bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent">{resumeData.personal.name}</span>
             </motion.h1>
 
             <motion.p variants={fadeInUp} className="mt-4 text-xl font-medium text-slate-600 dark:text-slate-300">
@@ -84,12 +79,6 @@ export default function Hero() {
               >
                 View Resume
               </a>
-            </motion.div>
-
-            <motion.div variants={fadeInUp} className="mt-10 flex flex-wrap gap-6 text-xs text-slate-500 dark:text-slate-400 justify-center md:justify-start">
-              <span className="flex items-center gap-2"><MapPin size={14} className="text-cyan-500"/> {resumeData.personal.location}</span>
-              <span className="flex items-center gap-2"><Mail size={14} className="text-cyan-500"/> {resumeData.personal.email}</span>
-              <span className="flex items-center gap-2"><Phone size={14} className="text-cyan-500"/> {resumeData.personal.phone}</span>
             </motion.div>
           </motion.div>
 
