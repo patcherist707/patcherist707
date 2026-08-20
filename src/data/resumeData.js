@@ -3,7 +3,7 @@ import { Code2, Globe, Database, Terminal, Cpu } from 'lucide-react';
 export const resumeData = {
   personal: {
     name: "Patricia Madeth Buna",
-    title: "Computer Engineering Student & Front-End Developer",
+    title: "Computer Engineering Student",
     location: "Butuan City, Philippines, 8601",
     email: "p.buna.485504@umindanao.com.ph",
     phone: "(+63) 906 462 3305",
